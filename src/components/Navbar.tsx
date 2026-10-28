@@ -118,7 +118,7 @@ export const Navbar: React.FC<NavbarProps> = ({
               Book Fitting
             </button>
             <span className="text-zinc-600">|</span>
-            <span>EN / USD ($)</span>
+            <span>EN / INR (₹)</span>
           </div>
         </div>
       </div>

@@ -187,11 +187,11 @@ export const TrendingProducts: React.FC<TrendingProductsProps> = ({
                   <div className="flex items-baseline justify-between pt-1 border-t border-[#DFD7CB]/40">
                     <div className="flex items-baseline gap-2">
                       <span className="font-sans text-sm font-semibold text-[#20201E]">
-                        ${product.price}
+                        ₹{product.price}
                       </span>
                       {product.originalPrice && (
                         <span className="font-sans text-xs text-zinc-400 line-through">
-                          ${product.originalPrice}
+                          ₹{product.originalPrice}
                         </span>
                       )}
                     </div>

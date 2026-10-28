@@ -388,7 +388,7 @@ export const RunwayProductModal: React.FC<RunwayProductModalProps> = ({
                                 {piece.name}
                               </h4>
                               <p className="text-xs font-bold text-[#151412] mt-0.5">
-                                ${piece.price}
+                                ₹{piece.price}
                               </p>
                             </div>
                           </div>
@@ -415,7 +415,7 @@ export const RunwayProductModal: React.FC<RunwayProductModalProps> = ({
 
                   <div className="flex items-center gap-3 mt-2">
                     <span className="text-xl font-manrope font-bold text-[#151412]">
-                      ${liveTotal}
+                      ₹{liveTotal}
                     </span>
                     <span className="text-xs font-manrope text-[#77736c]">
                       {includedPieces.length} of {look.pieces.length} pieces selected
@@ -512,7 +512,7 @@ export const RunwayProductModal: React.FC<RunwayProductModalProps> = ({
                                     {piece.name}
                                   </h4>
                                   <span className="text-[11px] text-[#77736c] font-manrope">
-                                    {activeColor.name} · ${piece.price}
+                                    {activeColor.name} · ₹{piece.price}
                                   </span>
                                 </div>
                                 <button
@@ -574,7 +574,7 @@ export const RunwayProductModal: React.FC<RunwayProductModalProps> = ({
                   >
                     <span>Add {includedPieces.length} Pieces to Bag</span>
                     <span className="px-2.5 py-0.5 rounded-full bg-white text-[#151412] text-xs font-bold">
-                      ${liveTotal}
+                      ₹{liveTotal}
                     </span>
                   </button>
 
@@ -677,7 +677,7 @@ export const RunwayProductModal: React.FC<RunwayProductModalProps> = ({
                 <div className="grid grid-cols-2 gap-3 pt-2 text-xs font-manrope text-[#77736c] border-t border-[#e3e0da]">
                   <div className="flex items-center gap-2">
                     <Truck className="w-4 h-4 text-[#151412]" />
-                    <span>Free express shipping on $150+</span>
+                    <span>Free express shipping on ₹1,999+</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <RotateCcw className="w-4 h-4 text-[#151412]" />
@@ -788,7 +788,7 @@ export const RunwayProductModal: React.FC<RunwayProductModalProps> = ({
                       </h4>
                       <div className="flex items-center justify-between mt-1">
                         <span className="text-xs font-bold text-[#151412]">
-                          ${other.totalPrice}
+                          ₹{other.totalPrice}
                         </span>
                         <div className="flex items-center gap-1">
                           {other.colors.map((c) => (

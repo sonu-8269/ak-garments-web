@@ -550,7 +550,7 @@ export const Circular3DDeconstruct: React.FC<Circular3DDeconstructProps> = ({
                       {item.name}
                     </h4>
                     <span className="text-[11px] font-manrope font-bold text-[#151412]">
-                      ${item.price} USD
+                      ₹{item.price}
                     </span>
                   </div>
                 </button>
@@ -699,10 +699,10 @@ export const Circular3DDeconstruct: React.FC<Circular3DDeconstructProps> = ({
               <div className="flex items-baseline justify-between mt-4 pt-3 border-t border-[#e3e0da]/60">
                 <div className="flex items-baseline gap-2">
                   <span className="text-3xl font-manrope font-bold text-[#151412]">
-                    ${activeOutfit.price}
+                    ₹{activeOutfit.price}
                   </span>
                   <span className="text-xs font-manrope text-[#77736c]">
-                    USD
+                    INR
                   </span>
                 </div>
 
@@ -788,7 +788,7 @@ export const Circular3DDeconstruct: React.FC<Circular3DDeconstructProps> = ({
                 className="w-full py-3.5 px-6 rounded-full bg-[#151412] hover:bg-black text-white font-manrope text-xs font-bold uppercase tracking-wider transition-all shadow-md hover:shadow-lg active:scale-95 flex items-center justify-center gap-2"
               >
                 <ShoppingBag className="w-4 h-4" />
-                <span>Add to Bag (${activeOutfit.price})</span>
+                <span>Add to Bag (₹{activeOutfit.price})</span>
               </button>
 
               <button

@@ -306,11 +306,11 @@ export const InfiniteClothingRack: React.FC<InfiniteClothingRackProps> = ({
                       </h3>
                       <div className="flex items-center justify-center gap-2 mt-0.5">
                         <span className="font-sans text-xs font-semibold text-[#20201E]">
-                          ${item.price}
+                          ₹{item.price}
                         </span>
                         {item.originalPrice && (
                           <span className="font-sans text-[11px] text-zinc-400 line-through">
-                            ${item.originalPrice}
+                            ₹{item.originalPrice}
                           </span>
                         )}
                         <span className="text-[10px] text-[#7A7771] font-sans">

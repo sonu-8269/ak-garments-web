@@ -127,7 +127,7 @@ export const WeddingOccasion: React.FC<WeddingOccasionProps> = ({
                   {item.name}
                 </h4>
                 <div className="flex items-center justify-between mt-2 pt-2 border-t border-[#DFD7CB]/40 text-xs">
-                  <span className="font-semibold text-[#20201E]">${item.price}</span>
+                  <span className="font-semibold text-[#20201E]">₹{item.price}</span>
                   <span className="text-[11px] text-[#7A7771] underline group-hover:text-[#20201E]">
                     Explore Piece →
                   </span>

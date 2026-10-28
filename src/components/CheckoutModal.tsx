@@ -306,7 +306,7 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({
               {/* Order Amount Recap */}
               <div className="p-3 bg-[#E8DED1]/50 border border-[#DFD7CB] rounded-sm flex justify-between items-center text-xs">
                 <span>Total Amount Due:</span>
-                <span className="font-serif text-lg font-bold text-[#20201E]">${total}</span>
+                <span className="font-serif text-lg font-bold text-[#20201E]">₹{total}</span>
               </div>
 
               <div className="flex justify-between pt-4 border-t border-[#DFD7CB]">
@@ -323,7 +323,7 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({
                   className="px-7 py-3 bg-[#31443A] text-white uppercase tracking-widest text-xs font-medium rounded-sm hover:bg-[#20201E] shadow-md flex items-center gap-2"
                 >
                   <Sparkles className="w-3.5 h-3.5 text-[#B89562]" />
-                  <span>Place Order (${total})</span>
+                  <span>Place Order (₹{total})</span>
                 </button>
               </div>
             </form>
@@ -365,7 +365,7 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({
                 </div>
                 <div className="flex justify-between pt-1 font-semibold text-sm">
                   <span>Paid:</span>
-                  <span>${total}</span>
+                  <span>₹{total}</span>
                 </div>
               </div>
 

@@ -204,7 +204,7 @@ export const TailoringStudio: React.FC<TailoringStudioProps> = ({
                 </div>
                 <div className="flex justify-between pt-1 text-sm font-semibold">
                   <span>Estimated Bespoke Total:</span>
-                  <span className="text-[#31443A]">${totalPrice}</span>
+                  <span className="text-[#31443A]">₹{totalPrice}</span>
                 </div>
               </div>
 
@@ -265,7 +265,7 @@ export const TailoringStudio: React.FC<TailoringStudioProps> = ({
                               {opt.title}
                             </h4>
                             <span className="font-mono text-xs font-semibold text-[#31443A]">
-                              From ${opt.basePrice}
+                              From ₹{opt.basePrice}
                             </span>
                           </div>
                           <p className="text-[11px] text-[#52504C] mt-1 leading-relaxed">
@@ -327,7 +327,7 @@ export const TailoringStudio: React.FC<TailoringStudioProps> = ({
                               {fabric.name}
                             </h4>
                             <span className="font-mono text-xs font-bold text-[#B89562]">
-                              +${fabric.price}
+                              +₹{fabric.price}
                             </span>
                           </div>
                           <div className="text-[11px] text-[#52504C]">{fabric.material}</div>
@@ -669,7 +669,7 @@ export const TailoringStudio: React.FC<TailoringStudioProps> = ({
                     </div>
                     <div className="text-right">
                       <div className="text-xs text-[#7A7771] uppercase tracking-wider">Estimated Quote</div>
-                      <div className="font-serif text-3xl font-bold text-[#31443A]">${totalPrice}</div>
+                      <div className="font-serif text-3xl font-bold text-[#31443A]">₹{totalPrice}</div>
                     </div>
                   </div>
 

@@ -6,7 +6,7 @@ export const TrustBar: React.FC = () => {
     {
       icon: <Truck className="w-5 h-5 text-[#B89562]" />,
       title: 'Worldwide Express Shipping',
-      desc: 'Complimentary on orders above $150 · White-glove courier',
+      desc: 'Complimentary on orders above ₹1,999 · White-glove courier',
     },
     {
       icon: <Scissors className="w-5 h-5 text-[#B89562]" />,

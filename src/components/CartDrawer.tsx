@@ -83,7 +83,7 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
           ) : (
             <div className="space-y-1.5">
               <div className="text-[#52504C]">
-                Add <strong className="text-[#20201E]">${shippingThreshold - subtotal}</strong> more for complimentary worldwide express delivery.
+                Add <strong className="text-[#20201E]">₹{shippingThreshold - subtotal}</strong> more for complimentary worldwide express delivery.
               </div>
               <div className="w-full bg-[#DFD7CB] h-1.5 rounded-full overflow-hidden">
                 <div
@@ -140,7 +140,7 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
                       <span>Color: <strong>{item.selectedColor}</strong></span>
                     </div>
                     <div className="font-sans text-xs font-semibold text-[#20201E]">
-                      ${item.product.price}
+                      ₹{item.product.price}
                     </div>
                   </div>
 
@@ -212,21 +212,21 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
             <div className="space-y-1.5 text-xs text-[#52504C] font-sans border-t border-[#DFD7CB]/60 pt-3">
               <div className="flex justify-between">
                 <span>Subtotal</span>
-                <span className="font-semibold text-[#20201E]">${subtotal}</span>
+                <span className="font-semibold text-[#20201E]">₹{subtotal}</span>
               </div>
               {discountPercent > 0 && (
                 <div className="flex justify-between text-emerald-800">
                   <span>Courtesy Discount ({discountPercent}%)</span>
-                  <span>-${discountAmount.toFixed(2)}</span>
+                  <span>-₹{discountAmount.toFixed(2)}</span>
                 </div>
               )}
               <div className="flex justify-between">
                 <span>White-Glove Shipping</span>
-                <span>{shippingFee === 0 ? 'COMPLIMENTARY' : `$${shippingFee}`}</span>
+                <span>{shippingFee === 0 ? 'COMPLIMENTARY' : `₹${shippingFee}`}</span>
               </div>
               <div className="flex justify-between text-base font-serif font-bold text-[#20201E] border-t border-[#DFD7CB] pt-2">
                 <span>Estimated Total</span>
-                <span>${grandTotal.toFixed(2)}</span>
+                <span>₹{grandTotal.toFixed(2)}</span>
               </div>
             </div>
 

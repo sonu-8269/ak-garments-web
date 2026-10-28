@@ -363,7 +363,7 @@ export const RunwayLineup: React.FC<RunwayLineupProps> = ({
                         <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#151412] text-white text-[11px] font-manrope font-medium shadow-xl">
                           <span>{look.title}</span>
                           <span className="text-[#b89562]">·</span>
-                          <span className="font-semibold">${look.totalPrice}</span>
+                          <span className="font-semibold">₹{look.totalPrice}</span>
                         </span>
                       </div>
                     )}
@@ -502,7 +502,7 @@ export const RunwayLineup: React.FC<RunwayLineupProps> = ({
                 >
                   <span>Shop the look</span>
                   <span className="px-2 py-0.5 rounded-full bg-white text-[#151412] text-[11px] font-bold">
-                    ${frontLook.totalPrice}
+                    ₹{frontLook.totalPrice}
                   </span>
                 </button>
               </div>
@@ -599,7 +599,7 @@ export const RunwayLineup: React.FC<RunwayLineupProps> = ({
                         </span>
                         <span className="text-[#e3e0da] text-xs">·</span>
                         <span className="font-manrope text-xs font-bold text-[#151412]">
-                          ${piece.price}
+                          ₹{piece.price}
                         </span>
                       </div>
                     </div>
@@ -620,7 +620,7 @@ export const RunwayLineup: React.FC<RunwayLineupProps> = ({
 
             {/* Quick Helper Note & Total Summary */}
             <div className="mt-5 pt-4 border-t border-[#e3e0da] flex items-center justify-between text-xs font-manrope text-[#77736c]">
-              <span>Complimentary US shipping</span>
+              <span>Complimentary express shipping</span>
               <button
                 onClick={() => onOpenLook(frontLook)}
                 className="font-semibold text-[#151412] hover:underline"

@@ -135,7 +135,7 @@ export const SearchModal: React.FC<SearchModalProps> = ({
                             {product.name}
                           </h4>
                           <span className="text-xs font-semibold text-[#20201E]">
-                            ${product.price}
+                            ₹{product.price}
                           </span>
                         </div>
                       </div>

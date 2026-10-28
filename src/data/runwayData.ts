@@ -140,7 +140,7 @@ export const RUNWAY_LOOKS_WOMEN: RunwayLook[] = [
     description: 'Grade-A Inner Mongolian cashmere spun at 2/28 count for lightweight warmth without bulk. Paired with fluid Italian high-twist wool.',
     fabricCare: '100% Cashmere top. 100% Tropical wool bottoms. Hand wash cold or dry clean.',
     sizeFit: 'Model is 5\'11" wearing size S. High waistline with relaxed pooling hem.',
-    shippingReturns: 'Free standard shipping on orders over $150.'
+    shippingReturns: 'Free standard shipping on orders over ₹1,999.'
   },
   {
     id: 'look-w-04',
@@ -281,7 +281,7 @@ export const RUNWAY_LOOKS_WOMEN: RunwayLook[] = [
     description: 'Plush ribbed fisherman knit spun from 4-ply Peruvian alpaca and wool blend, casually draped over fluid silk charmeuse.',
     fabricCare: '70% Wool, 30% Baby Alpaca. Skirt: 100% Silk. Hand wash cold with wool detergent.',
     sizeFit: 'Generous relaxed fit on sweater. Skirt is bias-cut to glide over curves.',
-    shippingReturns: 'Free standard shipping on orders over $150.'
+    shippingReturns: 'Free standard shipping on orders over ₹1,999.'
   }
 ];
 
@@ -331,7 +331,7 @@ export const RUNWAY_LOOKS_MEN: RunwayLook[] = [
     description: 'Crafted from Super 150s Loro Piana virgin wool with genuine full-canvas horsehair chest construction for unmatched drape.',
     fabricCare: '100% Super 150s Italian Wool. Dry clean only by garment specialist.',
     sizeFit: 'Model is 6\'1" (185cm) wearing 40R / 32W. Tailored athletic drop-7 cut.',
-    shippingReturns: 'Free express shipping on all orders over $150. Free 30-day returns.'
+    shippingReturns: 'Free express shipping on all orders over ₹1,999. Free 30-day returns.'
   },
   {
     id: 'look-m-02',
@@ -425,7 +425,7 @@ export const RUNWAY_LOOKS_MEN: RunwayLook[] = [
     description: 'Dense Milano knit retains crisp jacket-like structure while offering the effortless comfort of knitwear. Genuine Australian shell buttons.',
     fabricCare: '100% Extra-Fine Australian Merino Wool. Hand wash cold or dry clean.',
     sizeFit: 'True to size. Straight cut through the torso.',
-    shippingReturns: 'Free standard shipping on orders over $150.'
+    shippingReturns: 'Free standard shipping on orders over ₹1,999.'
   },
   {
     id: 'look-m-04',

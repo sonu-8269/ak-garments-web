@@ -61,7 +61,7 @@ export const EditorialLookbook: React.FC<EditorialLookbookProps> = ({
                     {featuredShirt.name}
                   </div>
                   <div className="text-[10px] font-sans font-semibold text-[#31443A] mt-0.5">
-                    ${featuredShirt.price}
+                    ₹{featuredShirt.price}
                   </div>
                 </div>
               </div>

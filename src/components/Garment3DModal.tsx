@@ -233,11 +233,11 @@ export const Garment3DModal: React.FC<Garment3DModalProps> = ({
               <div className="flex items-center justify-between border-y border-[#DFD7CB]/70 py-3">
                 <div className="flex items-baseline gap-2.5">
                   <span className="font-serif text-2xl font-semibold text-[#20201E]">
-                    ${product.price}
+                    ₹{product.price}
                   </span>
                   {product.originalPrice && (
                     <span className="text-sm text-zinc-400 line-through">
-                      ${product.originalPrice}
+                      ₹{product.originalPrice}
                     </span>
                   )}
                   <span className="text-[11px] text-emerald-800 bg-emerald-50 px-2 py-0.5 rounded font-sans">

@@ -76,7 +76,7 @@ export const WishlistDrawer: React.FC<WishlistDrawerProps> = ({
                     {product.name}
                   </h4>
                   <div className="text-xs font-semibold text-[#20201E]">
-                    ${product.price}
+                    ₹{product.price}
                   </div>
                   <div className="text-[10px] text-[#7A7771]">
                     {product.fabric.split(',')[0]}
