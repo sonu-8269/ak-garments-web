@@ -126,7 +126,7 @@ export const TailoringStudio: React.FC<TailoringStudioProps> = ({
             <Scissors className="w-3.5 h-3.5" />
             <span>Made For You · Measured For You</span>
           </div>
-          <h2 className="font-serif text-4xl sm:text-5xl font-normal text-[#20201E]">
+          <h2 className="font-serif text-3xl sm:text-5xl font-normal text-[#20201E]">
             Your Fit. Your Fabric. <br />
             <span className="italic text-[#B89562]">Your Signature.</span>
           </h2>
@@ -136,8 +136,8 @@ export const TailoringStudio: React.FC<TailoringStudioProps> = ({
         </div>
 
         {/* Step Indicator Tabs */}
-        <div className="max-w-4xl mx-auto mb-10">
-          <div className="grid grid-cols-4 gap-2 border-b border-[#DFD7CB] pb-4">
+        <div className="max-w-4xl mx-auto mb-8 sm:mb-10">
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 border-b border-[#DFD7CB] pb-4">
             {[
               { num: 1, label: '01. Garment' },
               { num: 2, label: '02. Fabric' },
@@ -674,18 +674,18 @@ export const TailoringStudio: React.FC<TailoringStudioProps> = ({
                   </div>
 
                   {/* Actions */}
-                  <div className="flex items-center justify-between pt-4 border-t border-[#DFD7CB]">
+                  <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3 pt-4 border-t border-[#DFD7CB]">
                     <button
                       type="button"
                       onClick={() => setStep(3)}
-                      className="px-5 py-2.5 border border-[#20201E] text-xs uppercase tracking-widest font-medium rounded-sm flex items-center gap-2"
+                      className="px-5 py-2.5 border border-[#20201E] text-xs uppercase tracking-widest font-medium rounded-sm flex items-center justify-center gap-2"
                     >
                       <ArrowLeft className="w-3.5 h-3.5" />
                       <span>Back</span>
                     </button>
                     <button
                       type="submit"
-                      className="px-8 py-3.5 bg-[#31443A] text-white text-xs uppercase tracking-widest font-medium hover:bg-[#20201E] transition-colors rounded-sm flex items-center gap-2 shadow-lg"
+                      className="px-8 py-3.5 bg-[#31443A] text-white text-xs uppercase tracking-widest font-medium hover:bg-[#20201E] transition-colors rounded-sm flex items-center justify-center gap-2 shadow-lg"
                     >
                       <Sparkles className="w-4 h-4 text-[#B89562]" />
                       <span>Book Bespoke Fitting Consultation</span>

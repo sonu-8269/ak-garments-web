@@ -91,7 +91,7 @@ export const Garment3DModal: React.FC<Garment3DModalProps> = ({
           <div className="lg:col-span-7 p-6 sm:p-8 bg-[#F7F3ED] flex flex-col items-center justify-between border-b lg:border-b-0 lg:border-r border-[#DFD7CB] relative select-none">
             
             {/* Top 3D Control Ribbon */}
-            <div className="w-full flex items-center justify-between mb-4">
+            <div className="w-full flex flex-wrap items-center justify-between gap-2 mb-4">
               <div className="flex items-center gap-2 bg-[#FAF8F4] p-1 rounded-sm border border-[#DFD7CB]">
                 <button
                   onClick={() => toggleFrontBack('front')}

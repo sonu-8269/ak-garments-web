@@ -164,16 +164,16 @@ export const RunwayLineup: React.FC<RunwayLineupProps> = ({
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-6 sm:mb-8">
         <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
           <div>
-            <div className="flex items-center gap-2 mb-1.5">
+            <div className="flex flex-wrap items-center gap-1.5 sm:gap-2 mb-1.5">
               <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-              <span className="text-[11px] font-manrope font-semibold tracking-[0.2em] uppercase text-[#77736c]">
-                Live Fashion Runway · Fall '26
+              <span className="text-[10px] sm:text-[11px] font-manrope font-semibold tracking-[0.16em] sm:tracking-[0.2em] uppercase text-[#77736c]">
+                Live Runway · Fall '26
               </span>
               <span className="w-1.5 h-1.5 rounded-full bg-[#151412]"></span>
-              <span className="text-[11px] font-manrope text-[#77736c]">New York Fashion Week</span>
+              <span className="text-[10px] sm:text-[11px] font-manrope text-[#77736c]">New York Fashion Week</span>
             </div>
             
-            <h1 className="font-instrument text-4xl sm:text-5xl lg:text-6xl font-normal text-[#151412] tracking-tight">
+            <h1 className="font-instrument text-2xl sm:text-4xl lg:text-6xl font-normal text-[#151412] tracking-tight">
               The Runway <span className="italic font-normal font-serif text-[#77736c]">Catwalk</span> — {activeGender === 'women' ? 'Women' : 'Men'}
             </h1>
             
@@ -183,7 +183,7 @@ export const RunwayLineup: React.FC<RunwayLineupProps> = ({
           </div>
 
           {/* Controls: Live Show Toggle + Women / Men Toggle Tabs */}
-          <div className="flex flex-wrap items-center gap-3 self-start sm:self-auto">
+          <div className="flex flex-wrap items-center justify-between sm:justify-start gap-2.5 sm:gap-3 w-full sm:w-auto mt-2 sm:mt-0">
             
             {/* Auto Runway Show Toggle Button */}
             <button
@@ -245,7 +245,7 @@ export const RunwayLineup: React.FC<RunwayLineupProps> = ({
           {/* THE 3D RUNWAY CATWALK RAMP STAGE (8 COLS) */}
           <div className="lg:col-span-8 relative">
             <div
-              className={`relative w-full h-[540px] sm:h-[640px] lg:h-[700px] rounded-3xl bg-gradient-to-b from-[#ebe7df] via-[#e5e0d6] to-[#d8d2c5] border border-[#dedad2] overflow-hidden shadow-[0_25px_60px_rgba(21,20,18,0.08)] transition-opacity duration-300 ${
+              className={`relative w-full h-[450px] sm:h-[600px] lg:h-[700px] rounded-2xl sm:rounded-3xl bg-gradient-to-b from-[#ebe7df] via-[#e5e0d6] to-[#d8d2c5] border border-[#dedad2] overflow-hidden shadow-[0_25px_60px_rgba(21,20,18,0.08)] transition-opacity duration-300 ${
                 isGenderTransitioning ? 'opacity-30' : 'opacity-100'
               }`}
               onMouseMove={handleCatwalkMouseMove}
@@ -294,7 +294,7 @@ export const RunwayLineup: React.FC<RunwayLineupProps> = ({
 
               {/* Foreground Spotlight Pool (Where Front Model Stands) */}
               <div
-                className="absolute bottom-2 right-[6%] w-[420px] h-[190px] rounded-full pointer-events-none z-15"
+                className="absolute bottom-2 right-[6%] w-64 sm:w-[420px] h-28 sm:h-[190px] rounded-full pointer-events-none z-15"
                 style={{
                   background: 'radial-gradient(ellipse at center, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0.5) 45%, transparent 75%)',
                   filter: 'blur(18px)',
@@ -393,7 +393,7 @@ export const RunwayLineup: React.FC<RunwayLineupProps> = ({
                         <img
                           src={modelImg}
                           alt={look.title}
-                          className={`h-[420px] sm:h-[530px] lg:h-[600px] w-auto object-contain object-bottom pointer-events-none filter drop-shadow-[0_20px_30px_rgba(21,20,18,0.18)] ${
+                          className={`h-[330px] sm:h-[480px] lg:h-[600px] max-w-[85vw] w-auto object-contain object-bottom pointer-events-none filter drop-shadow-[0_20px_30px_rgba(21,20,18,0.18)] ${
                             isFront ? 'brightness-[1.02]' : 'brightness-[0.96]'
                           }`}
                           loading="eager"
@@ -440,10 +440,10 @@ export const RunwayLineup: React.FC<RunwayLineupProps> = ({
             </div>
 
             {/* THREE-COLUMN BOTTOM BAR UNDER THE RUNWAY CATWALK */}
-            <div className="mt-5 grid grid-cols-1 md:grid-cols-12 gap-4 items-center bg-white/95 backdrop-blur-md p-4 sm:p-5 rounded-2xl border border-[#e3e0da] shadow-sm">
+            <div className="mt-4 sm:mt-5 flex flex-col md:grid md:grid-cols-12 gap-3 sm:gap-4 items-stretch md:items-center bg-white/95 backdrop-blur-md p-3.5 sm:p-5 rounded-2xl border border-[#e3e0da] shadow-sm">
               
               {/* Left Column: Look Name & 01/06 Segment Progress */}
-              <div className="md:col-span-4 flex flex-col gap-1.5">
+              <div className="md:col-span-4 flex items-center justify-between md:flex-col md:items-start gap-1.5">
                 <div className="flex items-center gap-3">
                   <span className="font-instrument text-2xl font-normal text-[#151412] line-clamp-1">
                     {frontLook.title}
@@ -471,7 +471,7 @@ export const RunwayLineup: React.FC<RunwayLineupProps> = ({
               </div>
 
               {/* Centre Column: Colour Swatches + Solid Black 'Shop The Look' */}
-              <div className="md:col-span-5 flex flex-wrap items-center justify-center gap-3">
+              <div className="md:col-span-5 flex items-center justify-between md:justify-center gap-2 sm:gap-3">
                 
                 {/* Colour Variant Pill */}
                 <div className="inline-flex items-center gap-2.5 bg-[#f4f3f0] px-3.5 py-1.5 rounded-full border border-[#e3e0da]">
@@ -508,7 +508,7 @@ export const RunwayLineup: React.FC<RunwayLineupProps> = ({
               </div>
 
               {/* Right Column: Next / Prev Arrow Buttons */}
-              <div className="md:col-span-3 flex items-center justify-end gap-2">
+              <div className="md:col-span-3 flex items-center justify-center md:justify-end gap-2 pt-2 md:pt-0 border-t md:border-t-0 border-[#e3e0da]">
                 <button
                   onClick={handlePrev}
                   className="w-10 h-10 rounded-full border border-[#151412] flex items-center justify-center text-[#151412] hover:bg-[#151412] hover:text-white transition-all active:scale-90 shadow-xs"

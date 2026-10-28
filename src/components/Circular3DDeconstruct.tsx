@@ -476,7 +476,7 @@ export const Circular3DDeconstruct: React.FC<Circular3DDeconstructProps> = ({
               </span>
             </div>
             
-            <h2 className="font-instrument text-3xl sm:text-4xl lg:text-5xl font-normal text-[#151412] tracking-tight">
+            <h2 className="font-instrument text-2xl sm:text-4xl lg:text-5xl font-normal text-[#151412] tracking-tight">
               360° Studio — {activeGender === 'men' ? 'Tailored Menswear' : 'Luxury Womenswear'}
             </h2>
             
@@ -560,25 +560,25 @@ export const Circular3DDeconstruct: React.FC<Circular3DDeconstructProps> = ({
         </div>
 
         {/* MAIN 3D ROTATING SHOWCASE: 2-COLUMN LUXURY STAGE */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center bg-white rounded-3xl p-6 sm:p-10 border border-[#e3e0da] shadow-[0_20px_50px_rgba(21,20,18,0.06)]">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 items-center bg-white rounded-2xl sm:rounded-3xl p-4 sm:p-10 border border-[#e3e0da] shadow-[0_20px_50px_rgba(21,20,18,0.06)]">
           
           {/* LEFT: THE BIG 3D ROTATING MODEL STAGE (7 COLS) */}
           <div
-            className="lg:col-span-7 flex flex-col items-center justify-center relative min-h-[520px] sm:min-h-[620px] cursor-grab active:cursor-grabbing select-none"
+            className="lg:col-span-7 flex flex-col items-center justify-center relative min-h-[420px] sm:min-h-[620px] cursor-grab active:cursor-grabbing select-none"
             onMouseDown={handleMouseDown}
             onMouseMove={handleMouseMove}
             onMouseUp={handleMouseUp}
             onMouseLeave={handleMouseUp}
           >
             {/* Top Interactive Hint Pill */}
-            <div className="absolute top-0 left-0 z-20 flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/90 backdrop-blur-md border border-[#e3e0da] text-[11px] font-manrope text-[#77736c] shadow-xs">
-              <RotateCw className="w-3.5 h-3.5 text-[#151412]" />
-              <span>Drag to tilt 3D perspective · Model stays front-facing</span>
+            <div className="absolute top-0 left-0 z-20 flex items-center gap-1.5 px-2.5 py-1 sm:px-3 sm:py-1.5 rounded-full bg-white/90 backdrop-blur-md border border-[#e3e0da] text-[10px] sm:text-[11px] font-manrope text-[#77736c] shadow-xs max-w-[calc(100%-1rem)]">
+              <RotateCw className="w-3.5 h-3.5 text-[#151412] flex-shrink-0" />
+              <span className="truncate">Drag to tilt 3D perspective · Model stays front-facing</span>
             </div>
 
             {/* Circular 3D Turntable Pedestal Floor (Perspective Disc) */}
             <div
-              className="absolute bottom-16 sm:bottom-20 w-80 sm:w-[440px] h-32 rounded-full border-2 border-[#b89562]/30 shadow-[0_25px_40px_rgba(21,20,18,0.12)] pointer-events-none"
+              className="absolute bottom-12 sm:bottom-20 w-64 sm:w-[440px] h-24 sm:h-32 rounded-full border-2 border-[#b89562]/30 shadow-[0_25px_40px_rgba(21,20,18,0.12)] pointer-events-none"
               style={{
                 transform: 'rotateX(75deg)',
                 background: 'radial-gradient(ellipse at center, #ffffff 30%, #f4f0e6 70%, #ded7c8 100%)',
@@ -612,7 +612,7 @@ export const Circular3DDeconstruct: React.FC<Circular3DDeconstructProps> = ({
                 <img
                   src={activeOutfit.image}
                   alt={activeOutfit.name}
-                  className="max-h-[480px] sm:max-h-[580px] w-auto object-contain filter drop-shadow-[0_25px_35px_rgba(21,20,18,0.22)] pointer-events-none"
+                  className="max-h-[350px] sm:max-h-[580px] max-w-[85vw] w-auto object-contain filter drop-shadow-[0_25px_35px_rgba(21,20,18,0.22)] pointer-events-none"
                   loading="eager"
                 />
               </div>

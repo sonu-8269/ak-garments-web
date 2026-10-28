@@ -110,7 +110,7 @@ export const Navbar: React.FC<NavbarProps> = ({
             <Sparkles className="w-3 h-3 text-[#B89562]" />
             <span>Autumn / Winter Sartorial Edition</span>
           </div>
-          <div className="w-full sm:w-auto text-center font-normal tracking-wider text-[11px]">
+          <div className="w-full sm:w-auto text-center font-normal tracking-wider text-[10px] sm:text-[11px] truncate px-2">
             Complimentary Master Tailor Consultations · Express Worldwide Delivery · 30-Day Alterations
           </div>
           <div className="hidden sm:flex items-center gap-4 text-[11px] text-[#DFD7CB]">
@@ -133,21 +133,14 @@ export const Navbar: React.FC<NavbarProps> = ({
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between">
-            {/* Left: Mobile hamburger & Secondary links */}
-            <div className="flex items-center gap-4 lg:hidden">
+            {/* Left: Mobile hamburger */}
+            <div className="flex items-center lg:hidden">
               <button
                 onClick={() => setMobileMenuOpen(true)}
-                className="p-1.5 text-[#20201E] hover:text-[#B89562] transition-colors focus:outline-none"
+                className="p-1.5 -ml-1.5 text-[#20201E] hover:text-[#B89562] transition-colors focus:outline-none"
                 aria-label="Open Navigation Menu"
               >
-                <Menu className="w-6 h-6 stroke-[1.5]" />
-              </button>
-              <button
-                onClick={onOpenSearch}
-                className="p-1.5 text-[#20201E] hover:text-[#B89562] transition-colors"
-                aria-label="Search"
-              >
-                <Search className="w-5 h-5 stroke-[1.5]" />
+                <Menu className="w-5 h-5 stroke-[1.5]" />
               </button>
             </div>
 
@@ -158,14 +151,14 @@ export const Navbar: React.FC<NavbarProps> = ({
                 className="text-left group flex flex-col items-start"
               >
                 <div className="flex items-center gap-2">
-                  <span className="font-instrument text-2xl sm:text-3xl tracking-[0.22em] font-normal text-[#151412] uppercase group-hover:opacity-80 transition-opacity">
+                  <span className="font-instrument text-lg sm:text-2xl md:text-3xl tracking-[0.15em] sm:tracking-[0.22em] font-normal text-[#151412] uppercase group-hover:opacity-80 transition-opacity whitespace-nowrap">
                     AK GARMENTS
                   </span>
                   <span className="text-[10px] font-manrope font-semibold tracking-widest text-[#77736c] hidden sm:inline">
                     · NEW YORK
                   </span>
                 </div>
-                <span className="text-[8px] tracking-[0.28em] uppercase text-[#77736c] font-manrope -mt-1 font-light">
+                <span className="text-[7px] sm:text-[8px] tracking-[0.18em] sm:tracking-[0.28em] uppercase text-[#77736c] font-manrope -mt-0.5 sm:-mt-1 font-light whitespace-nowrap">
                   Fall '26 Runway & Bespoke Collection
                 </span>
               </button>
@@ -246,7 +239,7 @@ export const Navbar: React.FC<NavbarProps> = ({
             </nav>
 
             {/* Right: Search, Account, Wishlist, Bag with spring count badge */}
-            <div className="flex items-center gap-3 sm:gap-4">
+            <div className="flex items-center gap-1.5 sm:gap-4">
               <button
                 onClick={onOpenSearch}
                 className="p-2 rounded-full hover:bg-white text-[#151412] transition-colors"
@@ -269,7 +262,7 @@ export const Navbar: React.FC<NavbarProps> = ({
               {/* Wishlist */}
               <button
                 onClick={onOpenWishlist}
-                className="relative p-2 rounded-full hover:bg-white text-[#151412] transition-colors"
+                className="relative p-1.5 sm:p-2 rounded-full hover:bg-white text-[#151412] transition-colors"
                 aria-label="Wishlist"
                 title="Saved Items"
               >
@@ -284,7 +277,7 @@ export const Navbar: React.FC<NavbarProps> = ({
               {/* Shopping Bag with Springy Scale Black Count Badge */}
               <button
                 onClick={onOpenCart}
-                className="relative inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-[#e3e0da] hover:border-[#151412] text-[#151412] transition-all shadow-xs group"
+                className="relative inline-flex items-center gap-1.5 sm:gap-2 px-2.5 sm:px-3.5 py-1.5 rounded-full bg-white border border-[#e3e0da] hover:border-[#151412] text-[#151412] transition-all shadow-xs group"
                 aria-label="Shopping Bag"
               >
                 <ShoppingBag className="w-4 h-4 text-[#151412]" />

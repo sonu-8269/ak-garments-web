@@ -226,10 +226,10 @@ export const RunwayProductModal: React.FC<RunwayProductModalProps> = ({
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
               
               {/* LEFT COLUMN: GALLERY WITH 360 TURNTABLE & HERO (6 COLS) */}
-              <div className="lg:col-span-6 flex gap-4 lg:sticky lg:top-24">
+              <div className="lg:col-span-6 flex flex-col-reverse sm:flex-row gap-3 sm:gap-4 lg:sticky lg:top-24">
                 
-                {/* Vertical Thumbnails */}
-                <div className="flex flex-col gap-2.5 flex-shrink-0">
+                {/* Thumbnails */}
+                <div className="flex sm:flex-col gap-2 sm:gap-2.5 overflow-x-auto sm:overflow-visible pb-2 sm:pb-0 flex-shrink-0 no-scrollbar">
                   {/* 360 view thumbnail */}
                   <button
                     onClick={() => setActiveGalleryView('360')}

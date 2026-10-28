@@ -113,7 +113,7 @@ export const InfiniteClothingRack: React.FC<InfiniteClothingRackProps> = ({
               <Sparkles className="w-3.5 h-3.5" />
               <span>Signature 3D Interactive Rail Experience</span>
             </div>
-            <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-normal text-[#20201E]">
+            <h2 className="font-serif text-2xl sm:text-4xl lg:text-5xl font-normal text-[#20201E]">
               Explore The Rack
             </h2>
             <p className="text-xs sm:text-sm text-[#52504C] font-light max-w-xl">
@@ -179,7 +179,7 @@ export const InfiniteClothingRack: React.FC<InfiniteClothingRackProps> = ({
           onTouchStart={handleTouchStart}
           onTouchMove={handleTouchMove}
           onTouchEnd={handleTouchEnd}
-          className={`relative w-full h-[540px] sm:h-[600px] perspective-2000 overflow-hidden cursor-grab ${
+          className={`relative w-full h-[460px] sm:h-[600px] perspective-2000 overflow-hidden cursor-grab ${
             isDragging ? 'cursor-grabbing' : ''
           }`}
         >
@@ -209,7 +209,7 @@ export const InfiniteClothingRack: React.FC<InfiniteClothingRackProps> = ({
                   onMouseEnter={() => setHoveredIndex(index)}
                   onMouseLeave={() => setHoveredIndex(null)}
                   onClick={() => onSelectProduct(item)}
-                  className="relative w-[320px] h-[500px] flex-shrink-0 flex flex-col items-center justify-start pt-11 px-4 cursor-pointer group"
+                  className="relative w-[270px] sm:w-[320px] h-[450px] sm:h-[500px] flex-shrink-0 flex flex-col items-center justify-start pt-11 px-4 cursor-pointer group"
                   style={{
                     perspective: '1000px',
                     zIndex: isHovered ? 40 : 10,

@@ -29,7 +29,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
             </div>
 
             <div className="space-y-3">
-              <h1 className="font-serif text-5xl sm:text-6xl lg:text-7xl font-normal leading-[1.08] text-[#20201E] tracking-tight">
+              <h1 className="font-serif text-4xl sm:text-6xl lg:text-7xl font-normal leading-[1.08] text-[#20201E] tracking-tight">
                 Wear Your <br />
                 <span className="italic font-light text-[#B89562]">Signature.</span>
               </h1>
@@ -84,7 +84,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
             </div>
 
             {/* Sartorial Quality Indicators */}
-            <div className="grid grid-cols-3 gap-4 pt-4 border-t border-[#DFD7CB]/70 text-[#52504C]">
+            <div className="grid grid-cols-3 gap-2 sm:gap-4 pt-4 border-t border-[#DFD7CB]/70 text-[#52504C]">
               <div>
                 <div className="font-serif text-2xl font-medium text-[#20201E]">100%</div>
                 <div className="text-[10px] tracking-wider uppercase text-[#7A7771] mt-0.5">

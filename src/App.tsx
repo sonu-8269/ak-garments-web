@@ -259,7 +259,7 @@ export const App: React.FC = () => {
   const weddingProducts = PRODUCTS.filter((p) => p.category === 'wedding' || p.category === 'ethnic');
 
   return (
-    <div className="min-h-screen bg-[#f4f3f0] text-[#151412] font-manrope">
+    <div className="min-h-screen w-full max-w-full overflow-x-hidden bg-[#f4f3f0] text-[#151412] font-manrope">
       
       {/* Toast Notification Pill in top-right */}
       {toastMessage && (
