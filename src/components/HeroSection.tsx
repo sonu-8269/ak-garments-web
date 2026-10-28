@@ -115,7 +115,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
                 <div className="aspect-[4/5] overflow-hidden">
                   <img
                     src="/images/luxury-editorial-duo.png"
-                    alt="Atelier Luxury Fashion Campaign"
+                    alt="AK Garments Luxury Fashion Campaign"
                     className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700"
                   />
                 </div>
@@ -176,7 +176,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
               </div>
               <div className="text-left pr-2">
                 <div className="text-[11px] font-serif font-bold text-[#20201E] tracking-wider uppercase">
-                  Atelier & Co.
+                  AK Garments
                 </div>
                 <div className="text-[9px] text-[#7A7771] tracking-widest uppercase">
                   Savile Row & Italian Canvassing

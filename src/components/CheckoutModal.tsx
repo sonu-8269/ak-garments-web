@@ -23,7 +23,7 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({
   // Address
   const [shippingInfo, setShippingInfo] = useState({
     fullName: 'Sonu Kushwaha',
-    email: 'client@atelierandco.com',
+    email: 'client@akgarments.com',
     phone: '+91 98765 43210',
     address: '42 Heritage Boulevard, Sartorial Enclave',
     city: 'New Delhi',
@@ -73,7 +73,7 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({
           <div className="flex items-center gap-2">
             <Lock className="w-4 h-4 text-[#B89562]" />
             <span className="font-serif text-lg font-medium text-[#20201E]">
-              {step === 4 ? 'Order Confirmation' : 'Secure Atelier Checkout'}
+              {step === 4 ? 'Order Confirmation' : 'Secure AK Garments Checkout'}
             </span>
           </div>
           <button
@@ -212,7 +212,7 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({
                   <div className="flex items-center gap-3">
                     <ShieldCheck className="w-5 h-5 text-[#7A7771]" />
                     <div>
-                      <div className="font-medium text-[#20201E]">Atelier Studio Collection</div>
+                      <div className="font-medium text-[#20201E]">AK Garments Studio Collection</div>
                       <div className="text-[11px] text-[#7A7771]">Private fitting & collection at our salon</div>
                     </div>
                   </div>

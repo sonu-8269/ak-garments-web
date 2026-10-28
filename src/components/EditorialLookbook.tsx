@@ -97,7 +97,7 @@ export const EditorialLookbook: React.FC<EditorialLookbookProps> = ({
               </div>
               <div className="p-6 bg-[#FAF8F4] border-t border-[#DFD7CB]/60">
                 <span className="text-[10px] uppercase tracking-widest text-[#7A7771] font-sans">
-                  Plate 02 · Atelier Studio
+                  Plate 02 · AK Garments Studio
                 </span>
                 <h3 className="font-serif text-xl text-[#20201E] mt-0.5">
                   The Tactile Poetry of Natural Fibres
@@ -114,7 +114,7 @@ export const EditorialLookbook: React.FC<EditorialLookbookProps> = ({
                 “In tailoring, balance is achieved when garment and body exist in uninterrupted dialogue.”
               </div>
               <div className="text-[10px] uppercase tracking-widest text-[#7A7771] font-sans">
-                — Head Pattern Cutter, Atelier & Co.
+                — Head Pattern Cutter, AK Garments
               </div>
             </div>
           </div>

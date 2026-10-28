@@ -50,7 +50,7 @@ export const PRODUCTS: Product[] = [
     ],
     sizes: ['M', 'L', 'XL'],
     fabric: '100% Organic GOTS-Certified Heavy French Terry Cotton',
-    description: 'Substantial 500 GSM luxury hoodie with double-layer hood, hidden kangaroo phone pouch, and custom embossed archival Atelier branding.',
+    description: 'Substantial 500 GSM luxury hoodie with double-layer hood, hidden kangaroo phone pouch, and custom embossed archival AK Garments branding.',
     details: [
       'Pre-shrunk vintage wash fabric',
       'Reinforced bar-tack stitching on stress points',
@@ -115,7 +115,7 @@ export const PRODUCTS: Product[] = [
       'Full floating canvas interlining for lifetime drape',
       'Hand-sewn milanese buttonhole on lapel',
       'Double back vents and pick-stitching along edge',
-      'Includes complimentary atelier alterations'
+      'Includes complimentary AK Garments alterations'
     ],
     inStock: true,
     rackFeatured: true,
@@ -320,7 +320,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'prod-12',
-    name: 'Atelier Leather Weekender Duffle',
+    name: 'AK Garments Leather Weekender Duffle',
     subtitle: 'Full-Grain Tuscan Vachetta Leather',
     category: 'men',
     subCategory: 'Accessories',
@@ -358,7 +358,7 @@ export const CATEGORIES = [
   },
   {
     id: 'women',
-    name: 'Womenswear Atelier',
+    name: 'AK Garments Womenswear Atelier',
     itemsCount: 115,
     tagline: 'Architectural tailoring, silk dresses & co-ord sets',
     image: '/images/luxury-editorial-duo.png',

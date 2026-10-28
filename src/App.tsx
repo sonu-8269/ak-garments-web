@@ -43,7 +43,7 @@ export const App: React.FC = () => {
   // Cart State (Persisted in LocalStorage)
   const [cart, setCart] = useState<CartItem[]>(() => {
     try {
-      const saved = localStorage.getItem('atelier_cart');
+      const saved = localStorage.getItem('ak_garments_cart');
       return saved ? JSON.parse(saved) : [
         {
           id: 'rack-1-L-Rosewood Dust',
@@ -61,7 +61,7 @@ export const App: React.FC = () => {
   // Wishlist State (Persisted in LocalStorage)
   const [wishlist, setWishlist] = useState<Product[]>(() => {
     try {
-      const saved = localStorage.getItem('atelier_wishlist');
+      const saved = localStorage.getItem('ak_garments_wishlist');
       return saved ? JSON.parse(saved) : [PRODUCTS[4]];
     } catch {
       return [];
@@ -70,7 +70,7 @@ export const App: React.FC = () => {
 
   useEffect(() => {
     try {
-      localStorage.setItem('atelier_cart', JSON.stringify(cart));
+      localStorage.setItem('ak_garments_cart', JSON.stringify(cart));
     } catch {
       // ignore
     }
@@ -78,7 +78,7 @@ export const App: React.FC = () => {
 
   useEffect(() => {
     try {
-      localStorage.setItem('atelier_wishlist', JSON.stringify(wishlist));
+      localStorage.setItem('ak_garments_wishlist', JSON.stringify(wishlist));
     } catch {
       // ignore
     }

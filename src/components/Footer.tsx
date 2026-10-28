@@ -32,7 +32,7 @@ export const Footer: React.FC<FooterProps> = ({
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 pb-12 border-b border-zinc-800 items-center">
           <div className="lg:col-span-6 space-y-3">
             <span className="text-[10px] tracking-[0.3em] uppercase text-[#B89562] font-semibold font-sans">
-              The Atelier Private Journal
+              The AK Garments Private Journal
             </span>
             <h3 className="font-serif text-3xl sm:text-4xl font-normal text-white">
               Join Our Sartorial Circle
@@ -63,7 +63,7 @@ export const Footer: React.FC<FooterProps> = ({
             {subscribed && (
               <div className="mt-2 text-xs text-emerald-400 flex items-center gap-1.5 font-sans">
                 <Check className="w-3.5 h-3.5" />
-                <span>You have been registered for our private atelier dispatches.</span>
+                <span>You have been registered for our private AK Garments dispatches.</span>
               </div>
             )}
           </div>
@@ -76,7 +76,7 @@ export const Footer: React.FC<FooterProps> = ({
           <div className="col-span-2 space-y-4">
             <div>
               <span className="font-serif text-2xl tracking-[0.2em] font-semibold text-white uppercase">
-                ATELIER & CO.
+                AK GARMENTS
               </span>
               <span className="block text-[9px] tracking-[0.3em] uppercase text-zinc-400 mt-0.5">
                 Haute Couture & Tailoring
@@ -88,7 +88,7 @@ export const Footer: React.FC<FooterProps> = ({
             <div className="space-y-1.5 text-zinc-400 text-[11px]">
               <div className="flex items-center gap-2">
                 <MapPin className="w-3.5 h-3.5 text-[#B89562]" />
-                <span>Flagship Atelier: 18 Mayfair / Connaught Place</span>
+                <span>Flagship Store: 18 Mayfair / Connaught Place</span>
               </div>
               <div className="flex items-center gap-2">
                 <Phone className="w-3.5 h-3.5 text-[#B89562]" />
@@ -96,7 +96,7 @@ export const Footer: React.FC<FooterProps> = ({
               </div>
               <div className="flex items-center gap-2">
                 <Mail className="w-3.5 h-3.5 text-[#B89562]" />
-                <span>concierge@atelierandco.com</span>
+                <span>concierge@akgarments.com</span>
               </div>
             </div>
           </div>
@@ -148,7 +148,7 @@ export const Footer: React.FC<FooterProps> = ({
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-zinc-800 flex flex-col sm:flex-row items-center justify-between text-xs text-zinc-500 font-sans gap-4">
           <div>
-            © 2026 ATELIER & CO. S.p.A. All rights reserved. Registered Haute Couture & Bespoke Tailoring House.
+            © 2026 AK GARMENTS S.p.A. All rights reserved. Registered Haute Couture & Bespoke Tailoring House.
           </div>
           <div className="flex items-center gap-6">
             <span className="hover:text-zinc-300 cursor-pointer">Privacy Policy</span>

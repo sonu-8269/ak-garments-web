@@ -42,7 +42,7 @@ export const CraftsmanshipStory: React.FC<CraftsmanshipStoryProps> = ({
             </div>
 
             <p className="text-xs sm:text-sm text-[#52504C] font-light leading-relaxed">
-              Unlike industrial garments bonded with synthetic glues that stiffen after dry cleaning, every Atelier & Co. tailored suit is crafted with an authentic floating horsehair canvas interlining. Over time, natural body warmth gently molds the jacket to your individual posture.
+              Unlike industrial garments bonded with synthetic glues that stiffen after dry cleaning, every AK Garments tailored suit is crafted with an authentic floating horsehair canvas interlining. Over time, natural body warmth gently molds the jacket to your individual posture.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">

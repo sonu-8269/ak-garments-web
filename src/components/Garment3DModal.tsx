@@ -260,7 +260,7 @@ export const Garment3DModal: React.FC<Garment3DModalProps> = ({
               <div className="p-3 bg-[#F7F3ED] rounded-sm border border-[#DFD7CB]/70 space-y-1">
                 <div className="text-[10px] uppercase tracking-widest text-[#7A7771] font-sans font-medium flex items-center gap-1.5">
                   <ShieldCheck className="w-3.5 h-3.5 text-[#B89562]" />
-                  <span>Atelier Fabric Specification</span>
+                  <span>AK Garments Fabric Specification</span>
                 </div>
                 <div className="text-xs text-[#20201E] font-medium">
                   {product.fabric}

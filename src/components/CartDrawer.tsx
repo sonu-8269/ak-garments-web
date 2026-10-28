@@ -38,7 +38,7 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
 
   const handleApplyPromo = (e: React.FormEvent) => {
     e.preventDefault();
-    if (promoCode.trim().toUpperCase() === 'ATELIER10' || promoCode.trim().toUpperCase() === 'VIP') {
+    if (promoCode.trim().toUpperCase() === 'AK10' || promoCode.trim().toUpperCase() === 'AKVIP') {
       setDiscountPercent(10);
       setPromoMessage('10% Sartorial Courtesy Applied');
     } else {
@@ -188,7 +188,7 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
                 <Tag className="w-3.5 h-3.5 text-zinc-400 absolute left-2.5 top-1/2 -translate-y-1/2" />
                 <input
                   type="text"
-                  placeholder="Promo code (e.g. ATELIER10)"
+                  placeholder="Promo code (e.g. AK10)"
                   value={promoCode}
                   onChange={(e) => setPromoCode(e.target.value)}
                   className="w-full pl-8 pr-2 py-2 text-xs bg-white border border-[#DFD7CB] rounded-sm uppercase tracking-wider focus:outline-none focus:border-[#B89562]"

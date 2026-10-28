@@ -246,7 +246,7 @@ export const InfiniteClothingRack: React.FC<InfiniteClothingRackProps> = ({
                     <div className="relative z-20 w-48 h-6 bg-gradient-to-b from-[#8F6A44] to-[#5C3F22] rounded-t-full shadow-md flex items-center justify-center border-t border-[#A88155]">
                       {/* Brand Stamp on Hanger */}
                       <span className="text-[7px] text-[#E8DED1] tracking-widest uppercase font-serif font-semibold">
-                        ATELIER & CO.
+                        AK GARMENTS
                       </span>
 
                       {/* Hanger Notch Tag (like -20%, NEW, ONLY 3 LEFT) */}

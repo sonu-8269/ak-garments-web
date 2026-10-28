@@ -37,7 +37,7 @@ export const SizeGuideModal: React.FC<SizeGuideModalProps> = ({
           <div className="flex items-center gap-2">
             <Ruler className="w-5 h-5 text-[#B89562]" />
             <h3 className="font-serif text-2xl font-medium text-[#20201E]">
-              Atelier Size & Metric Guide
+              AK Garments Size & Metric Guide
             </h3>
           </div>
           <button

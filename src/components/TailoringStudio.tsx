@@ -100,7 +100,7 @@ export const TailoringStudio: React.FC<TailoringStudioProps> = ({
       return;
     }
 
-    const bookingRef = `ATELIER-BESPOKE-${Math.floor(100000 + Math.random() * 900000)}`;
+    const bookingRef = `AK-GARMENTS-BESPOKE-${Math.floor(100000 + Math.random() * 900000)}`;
     setSubmittedBooking(bookingRef);
 
     // Fire celebration confetti
@@ -498,7 +498,7 @@ export const TailoringStudio: React.FC<TailoringStudioProps> = ({
                       },
                       {
                         id: 'studio-visit',
-                        title: 'Atelier Studio Appointment',
+                        title: 'AK Garments Studio Appointment',
                         desc: 'Visit our flagship atelier salon for private champagne fitting.',
                       },
                       {
@@ -639,7 +639,7 @@ export const TailoringStudio: React.FC<TailoringStudioProps> = ({
                       <label className="font-medium text-[#20201E] block mb-1">Email Address</label>
                       <input
                         type="email"
-                        placeholder="client@atelier.com"
+                        placeholder="client@akgarments.com"
                         value={customerEmail}
                         onChange={(e) => setCustomerEmail(e.target.value)}
                         className="w-full p-2.5 bg-[#FAF8F4] border border-[#DFD7CB] rounded-sm focus:border-[#B89562] outline-none"

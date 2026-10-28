@@ -10,7 +10,7 @@ export const TrustBar: React.FC = () => {
     },
     {
       icon: <Scissors className="w-5 h-5 text-[#B89562]" />,
-      title: '30-Day Atelier Alterations',
+      title: '30-Day AK Garments Alterations',
       desc: 'Complimentary fit adjustments by our master tailors',
     },
     {
@@ -33,7 +33,7 @@ export const TrustBar: React.FC = () => {
       rating: 5,
     },
     {
-      quote: "Our son's royal wedding sherwani from Atelier & Co. was the crown jewel of the wedding. Generational zardozi embroidery of the highest standard.",
+      quote: "Our son's royal wedding sherwani from AK Garments was the crown jewel of the wedding. Generational zardozi embroidery of the highest standard.",
       client: "Princess Gayatri R.",
       location: "Jaipur",
       rating: 5,

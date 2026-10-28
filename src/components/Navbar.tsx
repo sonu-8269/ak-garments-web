@@ -151,7 +151,7 @@ export const Navbar: React.FC<NavbarProps> = ({
               </button>
             </div>
 
-            {/* Brand Logo - Letter-spaced serif LINEUP wordmark on the left */}
+            {/* Brand Logo - Letter-spaced serif AK GARMENTS wordmark on the left */}
             <div className="flex items-center">
               <button
                 onClick={onNavigateHome}
@@ -159,14 +159,14 @@ export const Navbar: React.FC<NavbarProps> = ({
               >
                 <div className="flex items-center gap-2">
                   <span className="font-instrument text-2xl sm:text-3xl tracking-[0.22em] font-normal text-[#151412] uppercase group-hover:opacity-80 transition-opacity">
-                    LINEUP
+                    AK GARMENTS
                   </span>
                   <span className="text-[10px] font-manrope font-semibold tracking-widest text-[#77736c] hidden sm:inline">
                     · NEW YORK
                   </span>
                 </div>
                 <span className="text-[8px] tracking-[0.28em] uppercase text-[#77736c] font-manrope -mt-1 font-light">
-                  Fall '26 Runway & Bespoke Atelier
+                  Fall '26 Runway & Bespoke Collection
                 </span>
               </button>
             </div>
@@ -312,7 +312,7 @@ export const Navbar: React.FC<NavbarProps> = ({
               <div className="flex items-center justify-between pb-6 border-b border-[#DFD7CB]">
                 <div>
                   <span className="font-serif text-xl tracking-widest font-semibold text-[#20201E]">
-                    ATELIER & CO.
+                    AK GARMENTS
                   </span>
                   <span className="block text-[9px] tracking-widest uppercase text-zinc-500 font-sans">
                     Luxury Garments
@@ -360,7 +360,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                 <span>Custom Tailoring Studio</span>
               </button>
               <div className="text-center text-xs text-[#7A7771]">
-                Need assistance? Call Atelier Concierge
+                Need assistance? Call AK Garments Concierge
                 <div className="font-medium text-[#20201E] mt-0.5">+1 (800) 452-8354</div>
               </div>
             </div>
